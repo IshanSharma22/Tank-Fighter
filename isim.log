@@ -1,0 +1,23 @@
+ISim log file
+Running: C:\Users\152\Downloads\Lab 4\top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/152/Downloads/Lab 4/top_tb_isim_beh.wdb 
+ISim P.68d (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 26158280 ns : File "C:/Users/152/Downloads/Lab 4/top_tb.v" Line 63
+# isim force add /top_tb/btnR 1 -radix bin
+# run all
+Stopped at time : 36430615 ns : File "C:/Users/152/Downloads/Lab 4/VGA.v" Line 99
+# isim force add /top_tb/btnR 0 -radix bin
+# run all
+Stopped at time : 44183685 ns : File "C:/Users/152/Downloads/Lab 4/top_tb.v" Line 63
