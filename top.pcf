@@ -1,0 +1,52 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue Mar 06 11:47:31 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "btnL" LOCATE = SITE "C4" LEVEL 1;
+COMP "btnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "debouncer2/counter_3" BEL "debouncer2/counter_1"
+        BEL "debouncer2/counter_2" BEL "debouncer2/counter_4" BEL
+        "debouncer2/counter_5" BEL "debouncer2/counter_8" BEL
+        "debouncer2/counter_6" BEL "debouncer2/counter_7" BEL
+        "debouncer2/counter_9" BEL "debouncer2/counter_10" BEL
+        "debouncer2/counter_11" BEL "debouncer2/counter_12" BEL
+        "debouncer2/counter_13" BEL "debouncer2/counter_14" BEL
+        "debouncer2/counter_15" BEL "debouncer1/counter_1" BEL
+        "debouncer1/counter_2" BEL "debouncer1/counter_3" BEL
+        "debouncer1/counter_4" BEL "debouncer1/counter_5" BEL
+        "debouncer1/counter_6" BEL "debouncer1/counter_9" BEL
+        "debouncer1/counter_7" BEL "debouncer1/counter_8" BEL
+        "debouncer1/counter_10" BEL "debouncer1/counter_11" BEL
+        "debouncer1/counter_12" BEL "debouncer1/counter_13" BEL
+        "debouncer1/counter_14" BEL "debouncer1/counter_15" BEL
+        "clk_divider/counter25_0" BEL "clk_divider/clk5" BEL
+        "clk_divider/clk25" BEL "debouncer2/buttonout_reg" BEL
+        "debouncer1/buttonout_reg" BEL "debouncer2/counter_0" BEL
+        "debouncer1/counter_0" BEL "clk_divider/counter5_22" BEL
+        "clk_divider/counter5_21" BEL "clk_divider/counter5_20" BEL
+        "clk_divider/counter5_19" BEL "clk_divider/counter5_18" BEL
+        "clk_divider/counter5_17" BEL "clk_divider/counter5_16" BEL
+        "clk_divider/counter5_15" BEL "clk_divider/counter5_14" BEL
+        "clk_divider/counter5_13" BEL "clk_divider/counter5_12" BEL
+        "clk_divider/counter5_11" BEL "clk_divider/counter5_10" BEL
+        "clk_divider/counter5_9" BEL "clk_divider/counter5_8" BEL
+        "clk_divider/counter5_7" BEL "clk_divider/counter5_6" BEL
+        "clk_divider/counter5_5" BEL "clk_divider/counter5_4" BEL
+        "clk_divider/counter5_3" BEL "clk_divider/counter5_2" BEL
+        "clk_divider/counter5_1" BEL "clk_divider/counter5_0" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

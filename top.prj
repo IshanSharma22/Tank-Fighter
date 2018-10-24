@@ -1,0 +1,5 @@
+verilog work "VGA.v"
+verilog work "player.v"
+verilog work "debouncer.v"
+verilog work "clk_divider.v"
+verilog work "top.v"
